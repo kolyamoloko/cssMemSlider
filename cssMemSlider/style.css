@@ -9,6 +9,7 @@ body {
 .slider {
     background-color:#B1EDE8;
     width:80%;
+    height: 50vh;
     overflow:hidden;
     border: 10vw solid #6D435A;
 }
@@ -31,4 +32,7 @@ body {
 .bar:hover{
     opacity:0.8;
     transform:scale(1.1)
+}
+input[name="r"]{
+    visibility:hidden;
 }
