@@ -32,11 +32,11 @@ input {
 }
 .bar { 
     height: 1vw;
-    width:3vw;
+    width:2vw;
     margin: 2vw;
     border-radius: 15%;
     cursor:pointer;
-    background-color:#B1EDE8;
+    background-color:#CCDBDC;
     transition:all .4s ease;
     display: inline-block;
 }
@@ -108,15 +108,26 @@ input {
 .slidertextcontainer{
     width:100%;
 }
+.slides{
+    margin-top:1vh;
+}
+}
+label:hover .bar{
+    background: #80CED7;
+}
+label:active .bar{
+    background: #63C7B2;
 }
 
-
-
-@media (hover: hover) {
-    .label:hover .bar{
-      background: #ff6978;
-    }
-    .label:active .bar{
-      background: #6D435A;
-    }
-  }
+#r1:checked ~ .slider .flex .navigation .label1 .bar{
+    background:#263D42;
+ }
+#r2:checked ~ .slider .flex .navigation .label2 .bar{
+    background:#263D42;
+ }
+#r3:checked ~ .slider .flex .navigation .label3 .bar{
+    background:#263D42;
+ }
+#r4:checked ~ .slider .flex .navigation .label4 .bar{
+   background:#263D42;
+}
