@@ -114,7 +114,7 @@ input {
 }
 label:hover .bar{
     background: #80CED7;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 label:active .bar{
     background: #63C7B2;
