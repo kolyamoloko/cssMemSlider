@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemSlider</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <input type="radio" name="r" class="mem" id="r1" checked>
@@ -14,7 +17,6 @@
     <input type="radio" name="r" class="mem" id="r4">
     <div class="slider">
         <div class="slides">
-
             <div class="slide s1"><img src="./img/72194.jpg" alt="slide1"></div>
             <div class="slide"><img src="./img/72199.jpg" alt="slide2"></div>
             <div class="slide"><img src="./img/72209.jpg" alt="slide3"></div>
@@ -27,13 +29,21 @@
                     <div class="text">TEAM SPIRIT</div>
                     <div class="text">EZ GAME</div>
                     <div class="text">LGD</div>
-                    </div>
+                </div>
             </div>        
             <div class="navigation">
-                <label for="r1" class="bar"></label>
-                <label for="r2" class="bar"></label>
-                <label for="r3" class="bar"></label>
-                <label for="r4" class="bar"></label>
+                <label for="r1" class="label">
+                    <span class="bar"></span>
+                </label>
+                <label for="r2" class="label">
+                    <span class="bar"></span>
+                </label>
+                <label for="r3" class="label">
+                    <span class="bar"></span>
+                </label>
+                <label for="r4" class="label">
+                    <span class="bar"></span>
+                </label>
             </div>
         </div>
     </div>

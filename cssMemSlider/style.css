@@ -5,6 +5,7 @@
 
 body {
     background-color:#352d39;
+    font-family: 'Roboto', sans-serif;
 }
 
 input {
@@ -25,20 +26,24 @@ input {
     display:flex;
     width:50%;
 }
-.bar { 
-    height: 1vh;
-    width:3vw;
-    margin: 2vw;
+.label{
     cursor:pointer;
-    background-color:#B1EDE8;
-    opacity: .5;
-    transition:all .4s ease;
-}
-.bar:hover{
-    opacity: 1;
     transform: scale(1.1);
 }
+.bar { 
+    height: 1vw;
+    width:3vw;
+    margin: 2vw;
+    border-radius: 15%;
+    cursor:pointer;
+    background-color:#B1EDE8;
+    transition:all .4s ease;
+    display: inline-block;
+}
+
+
 .slides{
+    margin-top:5vh;
     width:400%;
     height:100%;
     display:flex;
@@ -63,7 +68,7 @@ input {
 }
 .text{
     min-width:100%;
-    font-size: 2rem;
+    font-size: 2.5vw;
     transition: all 0.6s ease;
 }
 #r1:checked ~ .slider .slides .s1{
@@ -90,3 +95,28 @@ input {
 #r4:checked ~ .slider .flex .slidertextcontainer .textslides .text{
     transform: translateX(-300%);
 }
+@media (max-width: 700px){
+.flex{
+    flex-wrap:wrap;
+    flex-direction:column-reverse;
+}
+.navigation {
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+.slidertextcontainer{
+    width:100%;
+}
+}
+
+
+
+@media (hover: hover) {
+    .label:hover .bar{
+      background: #ff6978;
+    }
+    .label:active .bar{
+      background: #6D435A;
+    }
+  }
