@@ -9,9 +9,6 @@ body {
     width:50%;
     height: 20%;
     overflow:hidden;
-
-}
-.middle {
     margin:0 auto;
     transform: translate (-50%, -50%);
 }
@@ -23,9 +20,9 @@ body {
     display:flex;
 }
 .bar { 
-    height: 8px;
-    width:30px;
-    margin:6px;
+    height: 4rem;
+    width:3rem;
+    margin: 1rem;
     cursor:pointer;
     background-color:#B1EDE8;
     opacity: .5;
